@@ -5,6 +5,11 @@
     <title></title>
     <meta name="name" charset="utf-8">
     <script src="./MaterialInput.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    setTimeout(function(){
+      new MaterialInput();
+    },500);
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./MaterialInput.css" media="screen" >
   </head>
@@ -27,6 +32,19 @@
     </div>
     <div class="crr-hb-input crr-hb-input-alternative">
       <input type="text" name="name" value="Hola Mundo" data-materialinput-color="#FFFFFF">
+      <div class="crr-hb-msg">Contraseña*</div>
+    </div>
+    <div class="crr-hb-input crr-hb-input-alternative">
+      <input type="text" name="name" value="Hola Mundo" data-materialinput-color="#FFFFFF" disabled>
+      <div class="crr-hb-msg">Contraseña*</div>
+    </div>
+    <div class="crr-hb-input crr-hb-input-alternative">
+      <input type="text" class="ng-invalid" name="name" value="Hola Mundo" data-materialinput-color="#FFFFFF">
+      <div class="crr-hb-msg">Contraseña*</div>
+    </div>
+
+    <div class="crr-hb-input crr-hb-input-alternative">
+      <input type="text" class="ng-invalid ng-pristine" name="name" value="Hola Mundo" data-materialinput-color="#FFFFFF">
       <div class="crr-hb-msg">Contraseña*</div>
     </div>
   </body>
