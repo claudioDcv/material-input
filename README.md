@@ -46,7 +46,12 @@ data-materialinput-color = Type Color, set a color input success
     </div>
 
     <div class="crr-hb-input crr-hb-input-alternative">
-      <input type="text" class="ng-invalid ng-pristine" name="name" value="Hola Mundo" data-materialinput-color="#FFFFFF">
+      <input 
+            type="text" 
+            class="ng-invalid ng-pristine" 
+            name="pass" 
+            value="Hola Mundo" 
+            data-materialinput-color="#FFFFFF">
       <div class="crr-hb-msg">Contraseña*</div>
     </div>
 ```
