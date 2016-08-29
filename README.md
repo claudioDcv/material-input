@@ -2,7 +2,7 @@
 material input, pure javascript
 
 
-##...
+##Options
 
 contructor = new MaterialInput();
 
@@ -11,7 +11,7 @@ integration with angular class:
 >.ng-invalid 
 >.ng-pristine
 
-Option:
+
 data-materialinput-color = Type Color, set a color input success
 
 
