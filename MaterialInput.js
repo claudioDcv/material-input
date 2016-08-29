@@ -1,5 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(event) {
-  (function(){
+(function(window, undefined){
     /* created by claudio.dcv@gmail.com */
     var MaterialInputCrrHaibu = function(){
       //atributos inicial
@@ -13,15 +12,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
     //seleciono el elemento general input
     function init(elm,self){
       var self = self;
-      console.log('init');
+      //console.log('init');
       var colorSuccessData = elm.dataset.materialinputColor || this.colorSuccess;
       var padre = elm.parentElement;
       var msg = padre.getElementsByTagName(self.tagMsg)[0];
         var txt = elm.value.length || 0;
-      msg.className = self.classOpen;
+        //console.log(self);
+        //msg.className = self.classOpen;
 
       if (validate(txt)) {
-        msg.className = elm.classOpen;
+        msg.className = self.classOpen;
         elm.style.borderBottomColor = colorSuccessData;
         elm.style.color = colorSuccessData;
         msg.style.color = colorSuccessData;
@@ -78,10 +78,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }
       }
     }
-    //window.MaterialInput = MaterialInputCrrHaibu;
+    window.MaterialInput = MaterialInputCrrHaibu;
     //Objeto autoejecutable
-
-    new MaterialInputCrrHaibu();
-    console.log(1);
-  })();
-});
+    //console.log(1);
+})(window);
