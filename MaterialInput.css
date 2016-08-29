@@ -51,10 +51,25 @@ html,body{
   input:disabled{
     color: rgba(0,0,0,0.54);
     border-color:rgba(0,0,0,0.54);
+    border-bottom-style: dotted !important;
   }
   input:disabled + .crr-hb-msg{
+    color:rgba(0,0,0,0.54);
+  }
+  input:disabled + .crr-hb-msg:not(.crr-hb-open-msg){
     font-size: 16px !important;
     margin: 30px 0 !important;
     color: rgba(0,0,0,0.54);
   }
+
+  input.ng-invalid:not(.ng-pristine){
+    color: #df3b13 !important;
+    border-bottom-color: #df3b13 !important;
+  }
+  input.ng-invalid:not(.ng-pristine) + .crr-hb-msg{
+    color: #df3b13 !important;
+  }
+
+  .crr-hb-input-alternative div{color:#000000;}
+  .crr-hb-input-alternative input{border-color:#000000;color:#000000;}
 /************ FIN MATERIAL INPUT ******/
